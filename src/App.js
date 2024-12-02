@@ -73,7 +73,7 @@ const FetchGetRequest = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <b>{data?.bpm}</b>
+          <b>Website</b>
         </p>
       </header>
     </div>
