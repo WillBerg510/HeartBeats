@@ -50,7 +50,7 @@ window.localStorage.setItem('code_verifier', codeVerifier);
 const FetchGetRequest = () => {
   //const [data, setData] = useState(null);
 
-  const API_URL = 'https://api.getsongbpm.com/search/?api_key=YOUR_API_KEY_HERE&type=artist&lookup=green+day';
+  const API_URL = 'https://api.getsongbpm.com/search/?api_key=52a89ed86042c6b1a384a90e4431b005&type=artist&lookup=green+day';
 
   useEffect(() => {
     const fetchItems = async function() {
