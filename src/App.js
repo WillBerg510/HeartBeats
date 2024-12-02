@@ -30,25 +30,25 @@ const clientId = '9da39ee411dc40c1b069995782a00621';
 const redirectUri = 'https://dsaproject3heartbeats.netlify.app/';
 
 const scope = 'user-read-private user-read-email';
-const authUrl = new URL("https://accounts.spotify.com/authorize")
+//const authUrl = new URL("https://accounts.spotify.com/authorize")
 
 // generated in the previous step
 window.localStorage.setItem('code_verifier', codeVerifier);
 
-const params =  {
+/*const params =  {
   response_type: 'code',
   client_id: clientId,
   scope,
   code_challenge_method: 'S256',
   code_challenge: codeChallenge,
   redirect_uri: redirectUri,
-}
+}*/
 
 //authUrl.search = new URLSearchParams(params).toString();
 //window.location.href = authUrl.toString();
 
 const FetchGetRequest = () => {
-  const [data, setData] = useState(null);
+  //const [data, setData] = useState(null);
 
   const API_URL = 'https://api.getsongbpm.com/search/?api_key=YOUR_API_KEY_HERE&type=artist&lookup=green+day';
 
@@ -58,7 +58,7 @@ const FetchGetRequest = () => {
         const response = await fetch(API_URL);
         if (!response.ok) throw Error('Did not receive expected data');
         const apiData = await response.json();
-        setData(apiData);
+        //setData(apiData);
         console.log(apiData);
       } catch (error) {
         console.log(error);
